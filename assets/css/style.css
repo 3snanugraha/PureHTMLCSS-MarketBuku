@@ -1,0 +1,308 @@
+/* CSS Global */
+@import url('https://fonts.cdnfonts.com/css/nunito');
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+/* button konfig */
+.btn{
+    text-decoration: none;
+}
+.btn-kecil{
+    padding: 10px 15px 10px 15px!important;
+    margin: 5px 0px 0px 0px;
+}
+.btn-coklat{
+    background-color: var(--hijau-tua);
+    color: white!important;
+}
+.btn-beli{
+    text-decoration: none;
+    padding: 11px;
+    background-color: var(--hijau-tua);
+    color: var(--bg-white);
+    margin-top: 10px!important;
+    border-radius: 12px 12px 12px 12px;
+}
+.btn-beli:hover{
+    background-color: var(--coklat);
+}
+
+.btn-beli-outline{
+    text-decoration: none;
+    padding: 11px;
+    background-color: transparent;
+    border: 1px solid var(--hijau-tua);
+    color: var(--hijau-tua);
+    margin-top: 10px!important;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.btn-beli-outline:hover{
+    background-color: var(--hijau-tua);
+    color: var(--bg-white);
+}
+
+/* warna dasar */
+:root {
+    --blue: #1e90ff;
+    --white: white;
+    --coklat: #484848;
+    --coklat-aktif: #2b2b2b;
+    --bg-white: rgb(254,254,254);
+    --bg-grey: rgb(214, 213, 213);
+    --gold: #c49e52;
+    --hijau-tua:rgb(60,89,97);
+  }
+.white{
+    color: white!important;
+}
+.black{
+    color: black!important;
+}
+.gold{
+    color: var(--gold)!important;
+}
+.coklat{
+    color: var(--coklat)!important;
+}
+.hijau-tua{
+    color: var(--hijau-tua)!important;
+}
+.bg-hijau-tua{
+    background-color: var(--hijau-tua)!important;
+}
+
+
+
+/* warna */
+/* garis */
+.rule:after, .rule:before {
+    content: " ";
+    position: relative;
+    background-color: #272727;
+    display: block;
+    height: 1px;
+    -webkit-flex-grow: .5;
+    flex-grow: .5;
+}
+/* Posisi */
+.text-tengah{
+    text-align: center!important;
+} 
+.text-kiri{
+    text-align: left!important;
+}
+.text-kanan{
+    text-align: right!important;
+}
+.float-kiri{
+    float: left!important;
+}
+.float-kanan{
+    float: right!important;
+}
+
+/* ukuran dan padding */
+.mt-0{
+    margin-top: 0px!important;
+}
+.mt-1{
+    margin-top: 4px!important;
+}
+.mt-3{
+    margin-top: 15px!important;
+}
+.mb-0{
+    margin-bottom: 0px!important;
+}
+.ml-2{
+    margin-left: 30px!important;
+}
+.ml-4{
+    margin-left: 60px!important;
+}
+.ml-5{
+    margin-left: 70px!important;
+}
+.mr-5{
+    margin-right: 145px!important;
+}
+/*  */
+/* Navigasi Menu */
+  .navigasi {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--bg-white);
+  }
+  
+  .navigasi li {
+    float: left;
+  }
+  
+  .navigasi li a {
+    display: block;
+    color: var(--coklat);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navigasi li a:hover:not(.active) {
+    color: var(--coklat-aktif);
+    border-bottom: 2px double var(--coklat-aktif);
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+
+  /* Pengaturan Posisi baris dan Kolom */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    .dummy{
+        display: none;
+    }
+    .caribuku{
+        display: none;
+    }
+    #mobile{
+        margin-right: 4px!important;
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  .banner-head{
+    padding: 2px 0px 2px 0px;
+    background-color: rgb(60,89,97);
+    width: 100%;
+    display: block;
+  }
+
+  .judul{
+    padding: 0px;
+    margin: 0px 16px 0px 20px!important;
+    font-size:larger;
+    font-weight: bolder;
+  }
+
+  .caribuku{
+    margin-top: 5px;
+    width:700px;
+    display: block;
+    margin-left: 90px!important;
+    padding: 10px;
+  }
+
+  .cart-count{
+    font-weight: bold;
+    font-size: x-small;
+    margin: -5px -7px 0px;
+    padding: 1px;
+    background-color: var(--hijau-tua);
+    color: var(--bg-white);
+    position:absolute;
+
+  }
+
+  .img-responsif{
+    width: 100%;
+  }
+  .img-buku{
+    width: 50%;
+    height: 50%;
+    padding: 17px;
+  }
+
+  .img-bintang{
+    width: 40%;
+    height: 40%;
+  }
+
+  .card{
+    background-color: rgb(236, 236, 236);
+    border-radius: 12px 12px 12px 12px;
+  }
+  .card h4{
+    margin: 0px;
+    text-align: center;
+    font-weight:bold;
+    text-decoration:overline;
+    color: var(--coklat-aktif);
+  }
+  .card:hover{
+    box-shadow: 0px 0px 15px 1px;
+  }
+ 
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 1;
+    width: 100%;
+    background-color: var(--hijau-tua);
+    color: var(--bg-white);
+    text-align: center;
+    margin-top: 50px;
+ }
+  .tabel-harga{
+    width: 100%;
+    /* border: 1px solid var(--coklat-aktif); */
+    margin: 0px;
+    padding: 0px;
+  }
+  td{
+    border: 1px solid var(--coklat-aktif);
+  }
+  .border-coklat{
+    border: 1px solid var(--coklat-aktif);
+  }
